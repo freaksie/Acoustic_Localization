@@ -1,0 +1,29 @@
+spectrum: shows informtion of different frequencies present and their magnitude.
+spectrogram: shows informtion of different frequences present in time domain.
+
+we require 2d-fft so that we can plot spctrogram with time, frequences and their magnitude.
+
+
+1. Build spectrogram with both frequency and magnitude. (Done)
+
+2. Develop dataset for new spectrograms. (Done)
+
+3. Build model for new dataset. (Not Working)
+
+4. Confirm the output of yolo and get more precised data for label. (Done)
+
+5. Gather new data. (More Data with white drone)
+
+6. Test yolo on new data. (Done) (White drone left)
+
+7. Create audio file of data. (Done) (White drone left)
+
+8. Collect frames from the video data. (Done) (White drone left)
+
+9. Test yolo on the frame and save labels for student network. (Done) (White drone left)
+
+10. Create audio chunks for new dataset. (Done) (White drone left)
+
+Date 12/29/2022
+
+1. Rebuild old dataset. 
