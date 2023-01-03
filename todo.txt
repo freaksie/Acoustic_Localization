@@ -8,7 +8,7 @@ we require 2d-fft so that we can plot spctrogram with time, frequences and their
 
 2. Develop dataset for new spectrograms. (Done)
 
-3. Build model for new dataset. (Not Working)
+3. Build model for new dataset. (Working)
 
 4. Confirm the output of yolo and get more precised data for label. (Done)
 
@@ -24,6 +24,6 @@ we require 2d-fft so that we can plot spctrogram with time, frequences and their
 
 10. Create audio chunks for new dataset. (Done) (White drone left)
 
-Date 12/29/2022
+11. Test acoustic model on test dataset. (Done)
 
-1. Rebuild old dataset. 
+12. Create video with loacalization from acoustic model. ()
