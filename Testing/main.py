@@ -17,7 +17,7 @@ video_source=os.path.sep.join([base_path,"video/"])
 frame_dest=os.path.sep.join([base_path,"frames/"])
 frame_output=os.path.sep.join([base_path,"output_frames/"])
 chunk_dest=os.path.sep.join([base_path,"audio_chunks/"])
-model_path="/home/neel/Acoustic/Acoustics/Testing/models/cnn_dense.h5"
+model_path="/home/neel/Acoustic/Acoustics/Testing/models/cnn_dense_9000.h5"
 
 
 
