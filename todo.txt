@@ -27,3 +27,5 @@ we require 2d-fft so that we can plot spctrogram with time, frequences and their
 11. Test acoustic model on test dataset. (Done)
 
 12. Create video with loacalization from acoustic model. ()
+
+13. Evaluation metrics
