@@ -17,7 +17,7 @@ def dechunk(source,destination):
         audio_file_names.append(i[:-4])
     for audio_name in audio_file_names:
         curr_audio_file_path=audio_datasets+"/"+audio_name+".wav"
-        curr_audio_file, current_sample_rate = librosa.load(curr_audio_file_path,sr=None,mono=False)
+        curr_audio_file, current_sample_rate = librosa.load(curr_audio_file_path,sr=48000,mono=False)
         print(curr_audio_file.shape,current_sample_rate)
 
         # Divide current audio file into chunks of 0.03 sec audio clip. i.e 15 frames per sec. 48000/30=1600

@@ -2,18 +2,12 @@
     Author: Neel Rajeshbhai Vora
     Mail: neelrajeshbhai.vora@uta.edu
 '''
-import os
 import numpy as np
 import librosa
 import pandas as pd
-import keras
 from keras.models import load_model
-import matplotlib.pyplot as plt
-from matplotlib import patches
-import cv2
 from scipy import signal
-from extract_audio import dechunk
-from extract_frame import extract_frame
+import natsort
 
 
 
@@ -24,13 +18,14 @@ def predict(clip_file_names, chunk_dest,model_path):
     overlap = window_size - slide_size
     output_pd=[]
     model=load_model(model_path,compile=False)
-    for clip1 in clip_file_names:
+    for clip1 in natsort.natsorted(clip_file_names):
+        print(clip1)
         row=[]
         channel1_path=chunk_dest+"channel1/"+clip1
         channel2_path=chunk_dest+"channel2/"+clip1
         row.append(clip1[:-4]+".jpg")
-        channel1,sample_rate=librosa.load(channel1_path,sr=None)
-        channel2,sample_rate=librosa.load(channel2_path,sr=None)
+        channel1,sample_rate=librosa.load(channel1_path,sr=48000)
+        channel2,sample_rate=librosa.load(channel2_path,sr=48000)
         
         frequency,time,spectrum1=signal.spectrogram(channel1,nfft=window_size,fs=sample_rate,window=wd,noverlap=overlap,mode='magnitude')
         frequency,time,spectrum2=signal.spectrogram(channel2,nfft=window_size,fs=sample_rate,window=wd,noverlap=overlap,mode='magnitude')
@@ -45,7 +40,7 @@ def predict(clip_file_names, chunk_dest,model_path):
         
         preds = model.predict(spectrogram)[0]
         (startX, startY, endX, endY) = preds
-        startX,endX=startX*1440, endX*1440
+        startX,endX=startX*1920, endX*1920
         startY,endY=startY*1080, endY*1080
         width=endX-startX
         height=endY-startY
