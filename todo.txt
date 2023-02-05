@@ -14,18 +14,28 @@ we require 2d-fft so that we can plot spctrogram with time, frequences and their
 
 5. Gather new data. (More Data with white drone)
 
-6. Test yolo on new data. (Done) (White drone left)
+6. Test yolo on new data. (Done) (White drone left - Done)
 
-7. Create audio file of data. (Done) (White drone left)
+7. Create audio file of data. (Done) (White drone left-Done)
 
-8. Collect frames from the video data. (Done) (White drone left)
+8. Collect frames from the video data. (Done) (White drone left - Done)
 
 9. Test yolo on the frame and save labels for student network. (Done) (White drone left)
 
-10. Create audio chunks for new dataset. (Done) (White drone left)
+10. Create audio chunks for new dataset. (Done) (White drone left - Done)
 
 11. Test acoustic model on test dataset. (Done)
 
-12. Create video with loacalization from acoustic model. ()
+12. Create video with loacalization from acoustic model. (Done)
 
-13. Evaluation metrics
+13. Evaluation metrics (Done)
+
+14. Collect new dataset
+
+15. Evaluate model on new increased datasets.
+
+16. Multi Model.
+
+17. New hybrid model with RCNN-LSTM (Acoustics).
+
+18 All environment should be present in both train and test data sets. 
