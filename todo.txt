@@ -38,4 +38,4 @@ we require 2d-fft so that we can plot spctrogram with time, frequences and their
 
 17. New hybrid model with RCNN-LSTM (Acoustics).
 
-18 All environment should be present in both train and test data sets. 
+18 All environment should be present in both train and test data sets
